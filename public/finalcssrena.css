@@ -1,0 +1,172 @@
+body {
+    font-family: monospace;
+    background: #138815;
+    text-align: center;
+}
+/*titles/headings*/
+h1 {
+    font-family: 'Abril Fatface';
+    font-size: 50;
+    color: rgb(205, 236, 120);
+}
+/* Navagation bar */
+nav {
+    background-color: rgb(193, 217, 98);
+    margin-bottom: 3px;
+    font-size: 25;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav li {
+    color: rgb(85, 52, 4);
+    padding: 1px;
+    text-align: center;
+}
+
+nav li:hover {
+    background: rgb(10, 85, 84);
+    color: lightyellow;
+    font-size: 31;
+    text-align: center;
+}
+
+/* Buttons */
+/* button 56 from https://getcssscan.com/css-buttons-examples*/
+.btn {
+  appearance: none;
+  background-color: #ccf56d;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #80e352 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 5px;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: #058478;
+  box-shadow: #033954 0 -6px 8px inset;
+  color: lightgoldenrodyellow;
+  transform: scale(1.125);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+/*zipcode box */
+.zipcodebox {
+    background: rgb(168, 235, 221);
+    border: 4px solid rgb(205, 236, 120);
+    padding:20px;
+    width:60%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15;
+}
+
+/*rate box */
+.ratebox {
+    background: rgb(140, 234, 206);
+    border: 4px solid rgb(205, 236, 120);
+    padding:20px;
+    width:60%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 15;
+}
+
+/*nutrition box */
+.nutritionbox {
+    background: rgb(116, 224, 212);
+    border: 4px solid rgb(205, 236, 120);
+    padding:20px;
+    width:60%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 15;
+}
+
+/*inner part of form*/
+.form {
+    background: lightgoldenrodyellow;
+    font-family: monospace;
+    color:#471c06;
+}
+
+/* for chart abiut nutruition*/
+canvas {
+    display: none;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+/* answer info*/
+#questionAnswer {
+    display: none;
+    margin-top: 50px;
+    padding: 20px;
+    background: lightgoldenrodyellow;
+}
+.swiper {
+  width: 900px;
+  height: 600px;
+}
+
+.chart-box {
+    background: rgb(156, 241, 247);   /* light background */
+    border: 4px solid rgb(205, 236, 120);
+    padding: 20px;
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hidden-answer {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: lightgoldenrodyellow;
+    border: 3px solid #cdec78;
+    font-size: 18px;
+}
+
+.question-btn {
+    font-size: 14px;   /* smaller text */
+    padding: 8px 12px; /* smaller button size */
+    margin: 5px;
+    border-radius: 20px;
+}

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>AboutPage-FinalProject</title>
+        <link rel="stylesheet" href="finalcssrena.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+        
+        
+        <script defer src="finaljsrena.js"></script>
+        <script defer src="index.js"></script>
+
+    </head>
+    <body>
+        <h1>About Page</h1>
+        <nav>
+            <ul>
+                <li onclick="goPage('Final_Project_Rena.html')">Home</li>
+                <li onclick="goPage('finalabout.html')">About</li>
+                <li onclick="goPage('finalfunction.html')">Help</li>
+            </ul>
+        </nav>
+
+        
+<!--chart loads calories in diffeend brands of bread from supabase which connects to kroger api-->
+<!--whole grain vs whole wheat chart-->
+        <div class="chart-box">
+            <button class="btn" onclick="loadChart()">Show calories in bread comparison</button>
+            <canvas id="calorieChart"></canvas>
+        </div>
+        
+        <h2>About the health of this nation</h2>
+        <p>If you click the chart button above it will show you a comparison of calories of bread based on different brands. 
+            If bread is made by wheat why are some DOUBLE the calorie count of others? 
+            This made me want to create this website so you can find healthy food and know exactly what you are eating.
+        Bellow are some questions you might have about Mindful Bites. </p>
+
+<!--need to load from supabase database -->
+<!--const supabaseURL='https://eivzsjkecyijcoedwzom.supabase.co';
+const supabaseKey='sb_publishable__L-JFrzOXCrPv3xfnQ6rIQ_TW6hdpY-'; -->
+    
+        <div id="infoQuestions"></div>
+        <div id="questionAnswer" class="hidden-answer"></div>
+
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head> 
+        <title>Home-MindfulBites-FinalProject</title>
+        <link rel="stylesheet" href="finalcssrena.css">
+        <script defer src="finaljsrena.js"></script>
+    </head>
+    <body>
+        <h1>Mindful Bites</h1>
+        <nav>
+            <ul>
+                <li onclick="goPage('Final_Project_Rena.html')">Home</li>
+                <li onclick="goPage('finalabout.html')">About</li>
+                <li onclick="goPage('finalfunction.html')">Help</li>
+            </ul>
+        </nav>
+
+<!--Need to make it so that you can only unput number into zipcode and only 5 numbers max and min-->
+        <div class="zipcodebox">
+            <h2>Search for healthy food in your zipcode! Save the hassle of going store to store. Just search here.</h2>
+            <label for="zipcode">Enter zipcode to find stores near you that sell the food you want.</label>
+            <input id="zipcode" class="form" placeholder="example:20850" required>
+            <br>
+            <label for="zitem">Enter item you are looking for.</label>
+            <input id="zitem" class="form" placeholder="Example: eggs" required>
+            <br>
+            <label for="categoryFilter">Choose a category you want to search for that will best meet your needs.</label>
+            <select class="form" id="categoryFilter" required>
+                <option value = "" disabled selected hidden>Choose Here </option>
+                <!--Need to make it so that when you pick an option health it will only show if it says organic in the category from the api, if you pick nutritious it should show you the nutrition rating and list from best to least the higher the number the more nutrisous it is -->
+                <option value="Organic">Organic</option>
+                <option value="nutritious">Nutritious</option>
+            </select>
+            <br>
+            <button class="btn" id="searchBtn">Search</button>
+            <div id="storeResults"></div>
+        </div>
+
+
+<!--enter item name and it should dispay differnet brands for that item with their description and with a rating number with no duplicate brands-->
+        <div class="ratebox">
+            <h2>Compare by brand, type, size and much more. See what people actually like to buy!</h2>
+            <label for="rate">Enter item to see its rating out of 5</label>
+            <input class="form" id="item" placeholder="Example: milk">
+            <button class="btn" id="rateBtn">Rate!</button>
+
+            <div id="ratingResults"></div>
+        </div>
+
+
+
+<!--should display nutrition information of item: calories, sugar, fat, protien-->
+<!--In api sugar is saved by code = "sugar", quantity=12 (number in grams), protien in api code = "PRO-" , quantity=12 (number in grams), fat in api "code": "FASAT", quantity=12 (number in grams), needs to pull from api and get saved in supabase-->
+        <div class="nutritionbox">
+            <h2>Help meet your nutrition goals! Look up nutrition facts of items.</h2>
+            <label for="nitem">Enter item you want to see the nutrition facts of</label>
+            <input class="form" id="nitem" placeholder="Example: bread" required>
+            <br>
+            <button class="btn" type="submit" id="nutritionBtn">Find</button>
+            <div id="nutritionResults"></div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>HelpPage - FinalProject</title>
+        <link rel="stylesheet" href="finalcssrena.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script defer src="finaljsrena.js"></script>
+    </head>
+    <body>
+        <h1> Help Page </h1>
+        <nav>
+            <ul>
+                <li onclick="goPage('Final_Project_Rena.html')">Home</li>
+                <li onclick="goPage('finalabout.html')">About</li>
+                <li onclick="goPage('finalfunction.html')">Help</li>
+            </ul>
+        </nav>
+        <h2>How to find food near you:</h2>
+        <p> On the home page where you see "Search for healthy food in your zipcode!" there will be a place to enter zipcode, item and to choose category(circled in red down bellow). 
+            Input your zip code, item you are looking for and click the search button. The organic category will show you only organic 
+            versions of your item. The nutritius category will show you versions of your item that are by different brands and it will
+             display a Nutrition score based on data from Kroger. Where you see N/A do not panic, this just means that data is unavalible
+            from Kroger at this time.</p>
+            <h3>Helpful Tips:</h3>
+            <p>IF YOU LEAVE ZIPCODE OR ITEM BLANK YOU WILL GET A MESSAGE ASKING YOU TO ENTER THEM(shown in purple bellow)</p>
+            <p>You can only enter a valid zipcode, not just random numbers. </p>
+            <p>If there are no Kroger stores in your zipcode then nothing will show up. For example: 
+                I tried a florida Sarasota zipcode but there was no data for any locations there so nothing popped up, I tried the same thing
+                with a few zipcodes around Maryland and the information showed up correctly.</p>
+            <p>You can only enter 5 numbers for zipcode. </p>
+            <p>Make sure to spell the food item correctly.</p>
+            <p> If nothing pops up check your spelling and if that doesnt work Kroger might not have data of your item availible
+                at this time. </p>
+        
+        <div class="swiper">
+            <div class="swiper-wrapper" id="slides"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <br>
+        <h2>How to look up ratings correctly:</h2>
+        <p> On the home page where you see "compare by brand, type and size," you should see where it says enter item(circled in red bellow), Enter
+            desired item and click "Rate!" Different versions of the item will pop up, it will display the brand name, 
+        specific item and its rating to tell you which items people actually like over others.</p>
+        <h3>Helpful Tips:</h3>
+        <p>Spell item correctly or nothing will show up</p>
+        <p>If you spell correctly and item still doesnt shown up, Kroger might not have data of your item availible at this time. </p>
+
+        <div class="swiper">
+            <div class="swiper-wrapper" id="slides1"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <br>
+        <h2>How to do a nutrition search:</h2>
+        <p> On the home page where you see "Help meet your nutrition goals!" Input your item where it says enter item (circled in red bellow) and 
+            click "Find". This will show different versions of your item with nutrition facts so you can compare them
+        and make the best decision. </p>
+        <h3>Helpful Tips:</h3>
+        <p>Spell item correctly or nothing will show up</p>
+        <p>If you spell correctly and item still doesnt shown up, Kroger might not have data of your item availible at this time. </p>
+
+        <div class="swiper">
+            <div class="swiper-wrapper" id="slides2"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <br>
+        <h2>How to navigate about page:</h2>
+        <p> On the home page on the top middle of the page you will see a navigation bar and a button that says about.
+            If you click that it will take you to the about  page. There if you click "show calories in bread comparison," it
+            will open a chart comparing the calories of bread for different brands. Under that you will see a bunch of questions that are buttons(circled in red bellow).
+        If you click any of them, it will open up the answer to that question bellow all the buttons. </p>
+        <h3>Helpful Tips:</h3>
+        <p>When clicking on a question make sure to scroll all the way down to see the answer</p>
+
+        <div class="swiper">
+            <div class="swiper-wrapper" id="slides3"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        
+
+    </body>
+</html>
