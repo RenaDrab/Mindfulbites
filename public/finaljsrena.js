@@ -35,7 +35,7 @@ searchBtn.onclick = async () => {
     }
 
     const res = await fetch(
-    `${BASE_URL}/fetch-and-save?zipcode=${zip}&item=${encodeURIComponent(item)}&category=${encodeURIComponent(category)}`
+    `/api/fetch-and-save?zipcode=${zip}&item=${encodeURIComponent(item)}&category=${encodeURIComponent(category)}`
 );
 
     const data = await res.json();
@@ -81,7 +81,7 @@ rateBtn.onclick = async () => {
 
     const item = document.getElementById("item").value.toLowerCase();
 
-    const res = await fetch(`${BASE_URL}/products`);
+    const res = await fetch("/api/products");
     const data = await res.json();
 
     const safeData = Array.isArray(data) ? data : [];
@@ -110,7 +110,7 @@ nutritionBtn.onclick = async () => {
 
     const item = document.getElementById("nitem").value.toLowerCase();
 
-    const res = await fetch(`${BASE_URL}/products`);
+    const res = await fetch("/api/products");
     const data = await res.json();
 
     const safeData = Array.isArray(data) ? data : [];
@@ -138,7 +138,7 @@ nutritionBtn.onclick = async () => {
 // Chart for about page
 async function loadChart() {
 
-    const res = await fetch(`${BASE_URL}/products`);
+    const res = await fetch("/api/products");
     const data = await res.json();
 
     const safeData = Array.isArray(data) ? data : [];
@@ -171,7 +171,7 @@ async function loadQuestions() {
     const box = document.getElementById("infoQuestions");
     if (!box) return;
 
-    const res = await fetch(`${BASE_URL}/question`);
+    const res = await fetch("/api/question");
     const data = await res.json();
 
     if (!Array.isArray(data)) return;
